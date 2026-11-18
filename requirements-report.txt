@@ -1,0 +1,4 @@
+# CPU-only plotting and DOCX generation, separate from model inference.
+numpy==2.2.6
+matplotlib==3.10.9
+python-docx==1.2.0

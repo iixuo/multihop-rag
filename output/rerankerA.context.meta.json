@@ -1,0 +1,89 @@
+{
+  "signature": {
+    "stage": "contexts",
+    "retriever_id": "rerankerA",
+    "retrieval_sha256": "d16f3e5cd742c60c24af6b14f68ae525960546caefe369415d13a11443f2d7ba",
+    "corpus_sha256": "20b61b5ab84de84a927420c5d265b7ec8d859ae49980699958a787ade9e4d28f",
+    "queries_sha256": "03cfb4926461f868684903aadc8024447bdda5bb3f6804741424cce338515bff",
+    "llms": {
+      "ragA": {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "requested_revision": "main",
+        "resolved_revision": "f5db02db724555f92da89c216ac04704f23d4590",
+        "tokenizer_sha256": "129e0ed45afe1af5970b109f0abb39ef7ed42995aa8571bc77a78e6c45a946bb",
+        "model_context_limit": 4096
+      },
+      "ragB": {
+        "model": "meta-llama/Llama-3.1-8B-Instruct",
+        "requested_revision": "main",
+        "resolved_revision": "0e9e39f249a16976918f6564b8830bc894c89659",
+        "tokenizer_sha256": "dfbfb97cbdd8592007c5f288fd8fe59c6a295ff4c272d4bf65e0927fbe0323b9",
+        "model_context_limit": 131072
+      },
+      "ragC": {
+        "model": "Qwen/Qwen2.5-7B-Instruct",
+        "requested_revision": "main",
+        "resolved_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+        "tokenizer_sha256": "f1bf47d2a45aa6b9c0ff9780322c03e5efb5cafe6f98713bc31dc37d89fd3a78",
+        "model_context_limit": 32768
+      },
+      "ragD": {
+        "model": "microsoft/phi-4",
+        "requested_revision": "main",
+        "resolved_revision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+        "tokenizer_sha256": "0d56dafdf78ff71660bd506250dd48353245a5b1b844c0809912e0794ebb6b31",
+        "model_context_limit": 16384
+      }
+    },
+    "requested_context_limit": 4096,
+    "context_limit": 4096,
+    "max_new_tokens": 64,
+    "prefix": "Below is a question followed by some context from different sources.\nPlease answer the question based on the context.\nThe answer to the question is a word or entity, or Yes/No when appropriate.\nIf the provided information is insufficient to answer the question, respond 'Insufficient Information'.\nAnswer directly without explanation.",
+    "staging": false,
+    "implementation_sha256": "121b821d3df37598a84382bb7028923202d5279e107d7b5d9c9b3431e63218c8",
+    "environment": {
+      "python": "3.10.21",
+      "platform": "Linux-6.17.0-1019-aws-x86_64-with-glibc2.39",
+      "packages": {
+        "torch": "2.14.0",
+        "transformers": "4.57.6",
+        "sentence-transformers": "5.7.0",
+        "numpy": "2.2.6",
+        "faiss-gpu": "1.15.0",
+        "accelerate": "1.14.0",
+        "bitsandbytes": "0.50.2"
+      }
+    }
+  },
+  "signature_hash": "aef51d278cf9a98c63eb5d19ba51736248bf60b3c243dcbded4d0a92d4548ad8",
+  "created_at": "2026-10-12T11:15:15.603328+00:00",
+  "status": "complete",
+  "attempts": [
+    {
+      "started_at": "2026-10-12T11:15:15.629764+00:00",
+      "resumed_count": 0,
+      "ended_at": "2026-10-12T11:27:45.179677+00:00",
+      "seconds": 749.5499211590004,
+      "status": "complete"
+    }
+  ],
+  "expected_queries_sha256": "a7fadae9d7ece60ac641732845716705b04d12835426bf260e7d5647e7c816e9",
+  "environment": {
+    "python": "3.10.21",
+    "platform": "Linux-6.17.0-1019-aws-x86_64-with-glibc2.39",
+    "packages": {
+      "torch": "2.14.0",
+      "transformers": "4.57.6",
+      "sentence-transformers": "5.7.0",
+      "numpy": "2.2.6",
+      "faiss-gpu": "1.15.0",
+      "accelerate": "1.14.0",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "updated_at": "2026-10-12T11:27:45.181317+00:00",
+  "saved_count": 2556,
+  "success_count": 2556,
+  "truncated_queries": 1824,
+  "total_preparation_seconds": 761.5183523589994
+}

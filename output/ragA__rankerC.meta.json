@@ -1,0 +1,68 @@
+{
+  "signature": {
+    "stage": "generation",
+    "rag_id": "ragA",
+    "model": "meta-llama/Llama-2-7b-chat-hf",
+    "resolved_revision": "f5db02db724555f92da89c216ac04704f23d4590",
+    "tokenizer_sha256": "129e0ed45afe1af5970b109f0abb39ef7ed42995aa8571bc77a78e6c45a946bb",
+    "retriever_id": "rankerC",
+    "context_sha256": "edeca660ba94fa738571ad326ea6cdd9d3a1a9279c555cec63f3efbdd7c1aec9",
+    "queries_sha256": "03cfb4926461f868684903aadc8024447bdda5bb3f6804741424cce338515bff",
+    "corpus_sha256": "20b61b5ab84de84a927420c5d265b7ec8d859ae49980699958a787ade9e4d28f",
+    "staging": false,
+    "context_limit": 4096,
+    "max_new_tokens": 64,
+    "decoding": "greedy",
+    "num_beams": 1,
+    "seed": 0,
+    "device": "cuda",
+    "dtype": "bfloat16",
+    "quantization": "none",
+    "implementation_sha256": "cb06583572ba1ba894044aa16f1d7930ef5beaab37aeb5acdd993d0ab91db2c2",
+    "environment": {
+      "python": "3.10.21",
+      "platform": "Linux-6.17.0-1019-aws-x86_64-with-glibc2.39",
+      "packages": {
+        "torch": "2.14.0",
+        "transformers": "4.57.6",
+        "sentence-transformers": "5.7.0",
+        "numpy": "2.2.6",
+        "faiss-gpu": "1.15.0",
+        "accelerate": "1.14.0",
+        "bitsandbytes": "0.50.2"
+      }
+    }
+  },
+  "signature_hash": "9f5135ad1bb285cc8a22760df479624fa60993e96bfb45cb940d24483f3fa7e1",
+  "created_at": "2026-10-12T12:25:17.115854+00:00",
+  "status": "complete",
+  "attempts": [
+    {
+      "started_at": "2026-10-12T12:25:17.143651+00:00",
+      "resumed_count": 0,
+      "shared_model_load_seconds": 35.330696212000475,
+      "ended_at": "2026-10-12T13:08:49.599044+00:00",
+      "seconds": 2612.4554084209994,
+      "status": "complete"
+    }
+  ],
+  "expected_queries_sha256": "a7fadae9d7ece60ac641732845716705b04d12835426bf260e7d5647e7c816e9",
+  "environment": {
+    "python": "3.10.21",
+    "platform": "Linux-6.17.0-1019-aws-x86_64-with-glibc2.39",
+    "packages": {
+      "torch": "2.14.0",
+      "transformers": "4.57.6",
+      "sentence-transformers": "5.7.0",
+      "numpy": "2.2.6",
+      "faiss-gpu": "1.15.0",
+      "accelerate": "1.14.0",
+      "bitsandbytes": "0.50.2"
+    }
+  },
+  "updated_at": "2026-10-12T13:08:49.600549+00:00",
+  "saved_count": 2556,
+  "success_count": 2556,
+  "latest_attempt_seconds": 2612.4554084209994,
+  "output_limit_count": 515
+}

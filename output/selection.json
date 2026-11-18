@@ -1,0 +1,38 @@
+{
+  "selected": [
+    {
+      "id": "rerankerA",
+      "file": "output/rerankerA.json",
+      "sha256": "d16f3e5cd742c60c24af6b14f68ae525960546caefe369415d13a11443f2d7ba",
+      "metrics": {
+        "n": 2255,
+        "P@4": 0.22073170731707317,
+        "P@10": 0.12226164079822616,
+        "FactRecall@10": 0.48082039911308205,
+        "MRR@10": 0.5398731214584873,
+        "MAP@10": 0.3142510822510822,
+        "Hit@10": 0.7929046563192904,
+        "FullEvidenceRecall@10": 0.20532150776053215
+      }
+    },
+    {
+      "id": "rankerC",
+      "file": "output/rankerC.json",
+      "sha256": "1b79fb57a847db5b9b39e7e75d2b8eb25e422d725ec234302a006286ca449e1c",
+      "metrics": {
+        "n": 2255,
+        "P@4": 0.1852549889135255,
+        "P@10": 0.12363636363636364,
+        "FactRecall@10": 0.4797117516629712,
+        "MRR@10": 0.4372502023721536,
+        "MAP@10": 0.2455775378641232,
+        "Hit@10": 0.8088691796008869,
+        "FullEvidenceRecall@10": 0.18403547671840353
+      }
+    }
+  ],
+  "queries_sha256": "03cfb4926461f868684903aadc8024447bdda5bb3f6804741424cce338515bff",
+  "corpus_sha256": "20b61b5ab84de84a927420c5d265b7ec8d859ae49980699958a787ade9e4d28f",
+  "staging": false,
+  "policy": "FullEvidenceRecall@10, FactRecall@10, MAP@10; lexicographic ID for exact ties"
+}

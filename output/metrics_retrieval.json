@@ -1,0 +1,256 @@
+{
+  "stage": "retrieval",
+  "staging": false,
+  "corpus_sha256": "20b61b5ab84de84a927420c5d265b7ec8d859ae49980699958a787ade9e4d28f",
+  "queries_sha256": "03cfb4926461f868684903aadc8024447bdda5bb3f6804741424cce338515bff",
+  "chunks_sha256": "103e99e5f3ba19f476b5b24d74c4dc190ed5c87ed6eac34e59fb0c4b7a29c626",
+  "chunk_count": 4743,
+  "aggregation": "macro over non-null queries; MAP@10 is mean AP@10 with denominator min(10, R); R counts all literal-match relevant chunks in the shared pool; zero if R=0",
+  "runs": {
+    "rankerA": {
+      "file": "output/rankerA.json",
+      "sha256": "7365829764722ac3c21f03aedda8415f627575b7cd73e72bd47f7d0ec019a6e5",
+      "evaluated_total": 2556,
+      "evaluated_non_null": 2255,
+      "groups": {
+        "overall": {
+          "n": 2255,
+          "P@4": 0.14933481152993347,
+          "P@10": 0.10084257206208426,
+          "FactRecall@10": 0.39578713968957874,
+          "MRR@10": 0.3757222046246436,
+          "MAP@10": 0.189747594997595,
+          "Hit@10": 0.7339246119733924,
+          "FullEvidenceRecall@10": 0.11219512195121951
+        },
+        "inference_query": {
+          "n": 816,
+          "P@4": 0.14736519607843138,
+          "P@10": 0.10134803921568628,
+          "FactRecall@10": 0.315359477124183,
+          "MRR@10": 0.3876838235294118,
+          "MAP@10": 0.15693699586316007,
+          "Hit@10": 0.7034313725490197,
+          "FullEvidenceRecall@10": 0.0392156862745098
+        },
+        "comparison_query": {
+          "n": 856,
+          "P@4": 0.15332943925233644,
+          "P@10": 0.0969626168224299,
+          "FactRecall@10": 0.4433411214953271,
+          "MRR@10": 0.38506202714730753,
+          "MAP@10": 0.21747407036542551,
+          "Hit@10": 0.7558411214953271,
+          "FullEvidenceRecall@10": 0.15186915887850466
+        },
+        "temporal_query": {
+          "n": 583,
+          "P@4": 0.14622641509433962,
+          "P@10": 0.1058319039451115,
+          "FactRecall@10": 0.43853630646083475,
+          "MRR@10": 0.34526668300253205,
+          "MAP@10": 0.1949612930745006,
+          "Hit@10": 0.7444253859348199,
+          "FullEvidenceRecall@10": 0.15608919382504288
+        },
+        "null_query": {
+          "n": 0,
+          "P@4": null,
+          "P@10": null,
+          "FactRecall@10": null,
+          "MRR@10": null,
+          "MAP@10": null,
+          "Hit@10": null,
+          "FullEvidenceRecall@10": null
+        }
+      },
+      "attainable_macro_fact_recall": 0.9787509238728752,
+      "attainable_full_evidence_recall": 0.9436807095343681
+    },
+    "rankerB": {
+      "file": "output/rankerB.json",
+      "sha256": "4eec1bad33ccc6e9ea97bb79a08e57de8e1dc7b6a6ee0f00578e465bf31546ca",
+      "evaluated_total": 2556,
+      "evaluated_non_null": 2255,
+      "groups": {
+        "overall": {
+          "n": 2255,
+          "P@4": 0.06784922394678493,
+          "P@10": 0.05747228381374723,
+          "FactRecall@10": 0.2304138950480414,
+          "MRR@10": 0.16160965051208953,
+          "MAP@10": 0.08346799293750512,
+          "Hit@10": 0.4634146341463415,
+          "FullEvidenceRecall@10": 0.05454545454545454
+        },
+        "inference_query": {
+          "n": 816,
+          "P@4": 0.05974264705882353,
+          "P@10": 0.05735294117647059,
+          "FactRecall@10": 0.1798406862745098,
+          "MRR@10": 0.14614165110488642,
+          "MAP@10": 0.05843564393349933,
+          "Hit@10": 0.46691176470588236,
+          "FullEvidenceRecall@10": 0.014705882352941176
+        },
+        "comparison_query": {
+          "n": 856,
+          "P@4": 0.07564252336448599,
+          "P@10": 0.05794392523364486,
+          "FactRecall@10": 0.26869158878504673,
+          "MRR@10": 0.18235285936804627,
+          "MAP@10": 0.10428766132621273,
+          "Hit@10": 0.48014018691588783,
+          "FullEvidenceRecall@10": 0.07476635514018691
+        },
+        "temporal_query": {
+          "n": 583,
+          "P@4": 0.06775300171526587,
+          "P@10": 0.056946826758147516,
+          "FactRecall@10": 0.24499714122355634,
+          "MRR@10": 0.1528029622369245,
+          "MAP@10": 0.08793584996415185,
+          "Hit@10": 0.4339622641509434,
+          "FullEvidenceRecall@10": 0.08061749571183534
+        },
+        "null_query": {
+          "n": 0,
+          "P@4": null,
+          "P@10": null,
+          "FactRecall@10": null,
+          "MRR@10": null,
+          "MAP@10": null,
+          "Hit@10": null,
+          "FullEvidenceRecall@10": null
+        }
+      },
+      "attainable_macro_fact_recall": 0.9787509238728752,
+      "attainable_full_evidence_recall": 0.9436807095343681
+    },
+    "rankerC": {
+      "file": "output/rankerC.json",
+      "sha256": "1b79fb57a847db5b9b39e7e75d2b8eb25e422d725ec234302a006286ca449e1c",
+      "evaluated_total": 2556,
+      "evaluated_non_null": 2255,
+      "groups": {
+        "overall": {
+          "n": 2255,
+          "P@4": 0.1852549889135255,
+          "P@10": 0.12363636363636364,
+          "FactRecall@10": 0.4797117516629712,
+          "MRR@10": 0.4372502023721536,
+          "MAP@10": 0.2455775378641232,
+          "Hit@10": 0.8088691796008869,
+          "FullEvidenceRecall@10": 0.18403547671840353
+        },
+        "inference_query": {
+          "n": 816,
+          "P@4": 0.22426470588235295,
+          "P@10": 0.14583333333333334,
+          "FactRecall@10": 0.45414624183006536,
+          "MRR@10": 0.4852012332710862,
+          "MAP@10": 0.23983410493827162,
+          "Hit@10": 0.8615196078431373,
+          "FullEvidenceRecall@10": 0.10661764705882353
+        },
+        "comparison_query": {
+          "n": 856,
+          "P@4": 0.17815420560747663,
+          "P@10": 0.11530373831775702,
+          "FactRecall@10": 0.5299844236760125,
+          "MRR@10": 0.44597194407357954,
+          "MAP@10": 0.2750536595089749,
+          "Hit@10": 0.8084112149532711,
+          "FullEvidenceRecall@10": 0.2616822429906542
+        },
+        "temporal_query": {
+          "n": 583,
+          "P@4": 0.14108061749571182,
+          "P@10": 0.10480274442538594,
+          "FactRecall@10": 0.44168096054888506,
+          "MRR@10": 0.35732935827275447,
+          "MAP@10": 0.2103375398186719,
+          "Hit@10": 0.7358490566037735,
+          "FullEvidenceRecall@10": 0.1783876500857633
+        },
+        "null_query": {
+          "n": 0,
+          "P@4": null,
+          "P@10": null,
+          "FactRecall@10": null,
+          "MRR@10": null,
+          "MAP@10": null,
+          "Hit@10": null,
+          "FullEvidenceRecall@10": null
+        }
+      },
+      "attainable_macro_fact_recall": 0.9787509238728752,
+      "attainable_full_evidence_recall": 0.9436807095343681
+    },
+    "rerankerA": {
+      "file": "output/rerankerA.json",
+      "sha256": "d16f3e5cd742c60c24af6b14f68ae525960546caefe369415d13a11443f2d7ba",
+      "evaluated_total": 2556,
+      "evaluated_non_null": 2255,
+      "groups": {
+        "overall": {
+          "n": 2255,
+          "P@4": 0.22073170731707317,
+          "P@10": 0.12226164079822616,
+          "FactRecall@10": 0.48082039911308205,
+          "MRR@10": 0.5398731214584873,
+          "MAP@10": 0.3142510822510822,
+          "Hit@10": 0.7929046563192904,
+          "FullEvidenceRecall@10": 0.20532150776053215
+        },
+        "inference_query": {
+          "n": 816,
+          "P@4": 0.22763480392156862,
+          "P@10": 0.12757352941176472,
+          "FactRecall@10": 0.3971609477124183,
+          "MRR@10": 0.5428950746965453,
+          "MAP@10": 0.2554844090413943,
+          "Hit@10": 0.7916666666666666,
+          "FullEvidenceRecall@10": 0.08088235294117647
+        },
+        "comparison_query": {
+          "n": 856,
+          "P@4": 0.23773364485981308,
+          "P@10": 0.12114485981308412,
+          "FactRecall@10": 0.5568535825545171,
+          "MRR@10": 0.5914019618750926,
+          "MAP@10": 0.39506378875537757,
+          "Hit@10": 0.8049065420560748,
+          "FullEvidenceRecall@10": 0.3189252336448598
+        },
+        "temporal_query": {
+          "n": 583,
+          "P@4": 0.18610634648370497,
+          "P@10": 0.11646655231560893,
+          "FactRecall@10": 0.4862778730703259,
+          "MRR@10": 0.45998529772114677,
+          "MAP@10": 0.27784958751939887,
+          "Hit@10": 0.7770154373927959,
+          "FullEvidenceRecall@10": 0.21269296740994853
+        },
+        "null_query": {
+          "n": 0,
+          "P@4": null,
+          "P@10": null,
+          "FactRecall@10": null,
+          "MRR@10": null,
+          "MAP@10": null,
+          "Hit@10": null,
+          "FullEvidenceRecall@10": null
+        }
+      },
+      "attainable_macro_fact_recall": 0.9787509238728752,
+      "attainable_full_evidence_recall": 0.9436807095343681
+    }
+  },
+  "selected": [
+    "rerankerA",
+    "rankerC"
+  ],
+  "selection_policy": "FullEvidenceRecall@10, FactRecall@10, MAP@10; ID breaks exact ties"
+}

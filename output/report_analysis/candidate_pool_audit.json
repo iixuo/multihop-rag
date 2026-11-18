@@ -1,0 +1,64 @@
+{
+  "candidate_sha256": "741b6a5beef9e581e78ebb594da5f94e85d78f3d52589673f5eaeb3085e832af",
+  "query_sha256": "03cfb4926461f868684903aadc8024447bdda5bb3f6804741424cce338515bff",
+  "pool_scores": {
+    "10": {
+      "n": 2255,
+      "FactRecall": 0.23041389504804138,
+      "FullEvidenceRecall": 0.05454545454545454,
+      "Hit": 0.4634146341463415,
+      "full_count": 123
+    },
+    "50": {
+      "n": 2255,
+      "FactRecall": 0.6085365853658536,
+      "FullEvidenceRecall": 0.3161862527716186,
+      "Hit": 0.8767184035476718,
+      "full_count": 713
+    }
+  },
+  "all_reranked_ids_in_candidates": true,
+  "recorded_revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "official_repository_configs": {
+    "modules.json": {
+      "url": "https://huggingface.co/BAAI/bge-m3/resolve/5617a9f61b028005a4858fdac845db406aefb181/modules.json",
+      "value": [
+        {
+          "idx": 0,
+          "name": "0",
+          "path": "",
+          "type": "sentence_transformers.models.Transformer"
+        },
+        {
+          "idx": 1,
+          "name": "1",
+          "path": "1_Pooling",
+          "type": "sentence_transformers.models.Pooling"
+        },
+        {
+          "idx": 2,
+          "name": "2",
+          "path": "2_Normalize",
+          "type": "sentence_transformers.models.Normalize"
+        }
+      ]
+    },
+    "1_Pooling/config.json": {
+      "url": "https://huggingface.co/BAAI/bge-m3/resolve/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling/config.json",
+      "value": {
+        "word_embedding_dimension": 1024,
+        "pooling_mode_cls_token": true,
+        "pooling_mode_mean_tokens": false,
+        "pooling_mode_max_tokens": false,
+        "pooling_mode_mean_sqrt_len_tokens": false
+      }
+    }
+  },
+  "passage_truncation": {
+    "count": 23,
+    "total": 4743,
+    "maximum_tokens": 668,
+    "max_length": 512
+  },
+  "scope": "Post-hoc audit of existing outputs and configured repository modules; not an FP32 or alternate-pooling inference ablation."
+}

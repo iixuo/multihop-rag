@@ -1,0 +1,15 @@
+# Linux / NVIDIA runtime; direct dependencies pinned to the recorded GPU run.
+# Keep my-requirements.txt unchanged as the complete historical environment record.
+-c constraints-reported.txt
+torch==2.14.0
+transformers==4.57.6
+sentence-transformers==5.7.0
+numpy==2.2.6
+faiss-gpu==1.15.0
+accelerate==1.14.0
+bitsandbytes==0.50.2
+sentencepiece==0.2.2
+protobuf==7.36.1
+safetensors==0.8.0
+huggingface_hub==0.36.2
+tokenizers==0.22.2
